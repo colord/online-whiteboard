@@ -1,3 +1,9 @@
+// @import "./Whiteboard.scss";
+
+$primary-background: #243A58;
+
+// background-color: $epic;
+
 #Whiteboard {
     #top-section {
         display: flex;
@@ -15,7 +21,7 @@
         }
 
         .icon {
-            background-color: black;
+            background-color: $primary-background;
             color: white;
             border-radius: 1.7rem;
             font-size: 1.2rem;
@@ -25,6 +31,10 @@
             &:hover {
                 background-color: #333;
             }
+        }
+
+        #exit {
+            background-color: #FF5353;
         }
     }
 }
@@ -39,13 +49,14 @@
         justify-content: space-between;
         padding: 1rem;
 
-        background-color: #1d1d21;
+        background-color: $primary-background;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
     }
 
     canvas {
-        border: 2px solid black;
+        border: 2px solid #A8CEF2;
+        border-top: none;
         image-rendering: pixelated;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;

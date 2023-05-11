@@ -51,6 +51,7 @@ export default function Canvas() {
         ctx.strokeStyle = colorRef.current
         ctx.fillStyle = colorRef.current
         ctx.lineWidth = penSizeRef.current
+        ctx.lineCap = 'round'
 
         ctx.beginPath()
         ctx.moveTo(lastMouse.current.x, lastMouse.current.y)
